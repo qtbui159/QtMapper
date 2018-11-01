@@ -6,6 +6,7 @@ You can use two methods to convert your objectSrcType to objectDstType easily.
 A. Use the Bind(default strategy) which will map the properties or field automatically( same type and name).It works well with BindExtra.
 
 B. Use the Bind(custom strategy) to decide the map rules.
+
 Array and List is also supported. View the test code you can get more help :)
 
 Get this library [nuget][1] or build the project.
