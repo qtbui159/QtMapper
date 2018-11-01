@@ -1,0 +1,50 @@
+<Project Sdk="MSBuild.Sdk.Extras/1.6.55">
+
+  <PropertyGroup>
+    <TargetFrameworks>net40;netstandard2.0</TargetFrameworks>
+    <RootNamespace>Qt</RootNamespace>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
+    <FileVersion>0.2.0.0</FileVersion>
+    <Version>0.2.0.0</Version>
+    <Authors>qtbui159</Authors>
+    <Company>qtbui159</Company>
+    <PackageLicenseUrl>https://github.com/qtbui159/QtMapper/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>qtbui159</Copyright>
+    <PackageProjectUrl>https://github.com/qtbui159/QtMapper</PackageProjectUrl>
+    <PackageTags>Qt Mapper</PackageTags>
+    <Description>A simple Mapper use easily
+自用的Mapper，功能比较单一</Description>
+    <PackageReleaseNotes>You can use two methods to convert your objectSrcType to objectDstType easily.
+A. Use the Bind(default strategy) which will map the properties or field automatically( same type and name).It works well with BindExtra
+B. Use the Bind(custom strategy) to decide the map rules.
+Array and List is also supported. View the test code or wiki you can get more help :)
+
+转换方法有两种，
+第一种，默认规则转换(Bind)，根据类型和字段名，配合额外转换(BindExtra)使用；
+第二种，自定义规则转换(Bind)，直接写下自定义规则即可；
+顺便也支持了Array和List的绑定，详情参阅代码和wiki</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net40|AnyCPU'">
+    <DocumentationFile>bin\Release\QtMapper.xml</DocumentationFile>
+    <OutputPath>bin\Release</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net40|AnyCPU'">
+    <OutputPath>bin\Debug</OutputPath>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <DocumentationFile>bin\Release\QtMapper.xml</DocumentationFile>
+    <OutputPath>bin\Release</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+    <OutputPath>bin\Debug</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>
